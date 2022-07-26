@@ -1,11 +1,5 @@
-//
-//  SampleAppTests.swift
-//  SampleAppTests
-//
-//  Created by 003x9k on 22/07/22.
-//
-
 import XCTest
+
 @testable import SampleApp
 
 class SampleAppTests: XCTestCase {

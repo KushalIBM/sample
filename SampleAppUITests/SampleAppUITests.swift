@@ -1,10 +1,3 @@
-//
-//  SampleAppUITests.swift
-//  SampleAppUITests
-//
-//  Created by 003x9k on 22/07/22.
-//
-
 import XCTest
 
 class SampleAppUITests: XCTestCase {
