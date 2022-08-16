@@ -1,0 +1,6 @@
+app_identifier("com.ksl.sample") # The bundle identifier of your app
+apple_id("kushal.shah1@ibm.com") # Your Apple email address
+
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

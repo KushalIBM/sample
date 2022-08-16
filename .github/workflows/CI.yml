@@ -1,5 +1,5 @@
 name: App build
-on: push
+on: pull_request
 
 jobs:
   build_with_signing:
@@ -36,3 +36,9 @@ jobs:
           # apply provisioning profile
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles
+      - name: iOS app
+        run: xcodebuild -scheme "SampleApp" clean archive -archivePath "Actions" -configuration "Release Production"
+      - name: export ipa
+        env:
+            EXPORT_PLIST: ${{ secrets. }}
+
