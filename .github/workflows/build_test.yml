@@ -15,7 +15,7 @@ jobs:
       run: |
           xcodebuild \
           -project SampleApp.xcodeproj \
-          -scheme SampleAppTests \
+          -scheme SampleApp \
           -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.5' \
           clean test
       
