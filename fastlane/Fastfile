@@ -25,5 +25,9 @@ platform :ios do
      is_key_content_base64: true,
      in_house: false # detecting this via ASC private key not currently supported
    )
- end
+ end 
+end
+
+lane :tests do
+  run_tests(scheme: "SampleApp")
 end
